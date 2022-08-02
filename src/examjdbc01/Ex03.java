@@ -1,6 +1,7 @@
 package examjdbc01;
 
 import java.sql.*;
+import java.util.Date;
 
 public class Ex03 {
     public static void main(String[] args){
@@ -22,8 +23,8 @@ public class Ex03 {
                         rs.getInt("NUM"),
                         rs.getString("MEMBERID"),
                         rs.getString("MEMBERPW"),
-                        rs.getString("NICKNAME"),
-                        rs.getDate("REGDATE"));
+                        rs.getString("NICKNAME"));
+                vo.setRegdate(rs.getDate("REGDATE"));
 
                 System.out.println(vo);
             }

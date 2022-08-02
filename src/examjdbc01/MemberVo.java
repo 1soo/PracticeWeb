@@ -11,12 +11,11 @@ public class MemberVo {
 
     public MemberVo() {}
 
-    public MemberVo(int num, String memberId, String memberPw, String nickName, Date regDate) {
+    public MemberVo(int num, String memberId, String memberPw, String nickName) {
         this.num = num;
         this.memberId = memberId;
         this.memberPw = memberPw;
         this.nickName = nickName;
-        this.regDate = regDate;
     }
 
     public int getNum() {

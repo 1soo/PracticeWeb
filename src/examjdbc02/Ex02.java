@@ -22,13 +22,10 @@ public class Ex02 {
                 rs.getInt(1),
                 rs.getString(2),
                 rs.getString("MEMBERPW"),
-                rs.getString(4),
-                rs.getDate("REGDATE"));
-
+                rs.getString(4));
+                vo.setRegdate(rs.getDate("REGDATE"));
                 System.out.println(vo);
             }
-
-
         }catch(SQLException e){
             e.printStackTrace();
         }finally{

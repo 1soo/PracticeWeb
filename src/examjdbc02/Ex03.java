@@ -23,9 +23,8 @@ public class Ex03 {
                         rs.getInt("NUM"),
                         rs.getString("MEMBERID"),
                         rs.getString("MEMBERPW"),
-                        rs.getString("NICKNAME"),
-                        rs.getDate("REGDATE"));
-
+                        rs.getString("NICKNAME"));
+                vo.setRegdate(rs.getDate("REGDATE"));
                 System.out.println(vo);
             }
 
